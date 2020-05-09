@@ -1,0 +1,150 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-size: 25px;
+    padding-left: 18px;
+  }
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+  }
+  .h2{
+    text-align: center;
+    color: white;
+    font-size: 37px;
+    height: 36px;
+    width: 22%;
+    margin-top: 52px;
+    margin-left: 39%;
+    padding-top: 0%;;
+    padding-bottom: 6%;
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 22px;
+    --hue: var(--hue-neutral);
+  }
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    height: 80%;
+    box-shadow: 0 0 10px 2px;
+  }
+  h1{
+      font-family: sans-serif;
+      font-size: 60px;
+      border-radius: 50px;
+      text-align: center;
+      color: #ffffff;
+      padding: 2px 0px;
+      background-color: --hue(--hue-neutral);
+  }
+  .btn-grid {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+    margin-top: 4%;
+    width: 50%;
+    margin-left: 22%;
+
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 21px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 3px 39px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  @media only screen and (max-width:400px){
+    .container{
+      height: 80%;
+    }
+    .btn-grid{
+      width: 66%;
+      margin-left: 17%;
+    }
+    
+  }
+  .answers-tracker div{
+    height: 40px;
+    width: 40px;
+    background-color: #cccccc;
+   
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+
+}
+.answers-tracker{
+    float: left;
+    width: 100%;
+    padding-left: 18px;
+}
+.answers-tracker div.correct{
+    background-color: green;
+     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+.answers-tracker div.wrong{
+    background-color:red;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+  
