@@ -115,9 +115,14 @@ body {
       width: 66%;
       margin-left: 17%;
     }
-    
-  }
-  .answers-tracker div{
+ 
+ /* The answer section has been styled.This answers-tracker means your are styling the button twice. It either your remove the 
+      anwers-tracker class or remove the butn-wrong and btn-right class
+      
+       
+      
+      
+      .answers-tracker div{
     height: 40px;
     width: 40px;
     background-color: #cccccc;
@@ -146,5 +151,6 @@ body {
     background-repeat: no-repeat;
     background-size: 50%;
 }
+      */
 
   
