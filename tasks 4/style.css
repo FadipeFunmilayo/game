@@ -83,7 +83,7 @@ body {
     border-color: black;
   }
   
-  .btn.correct {
+  /*.btn.correct {
     --hue: var(--hue-correct);
     color: black;
   }
@@ -91,6 +91,7 @@ body {
   .btn.wrong {
     --hue: var(--hue-wrong);
   }
+*/
   
   .start-btn, .next-btn {
     font-size: 1.5rem;
