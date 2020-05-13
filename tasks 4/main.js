@@ -5,7 +5,7 @@ const questionContainerElement = document.getElementById('question-container')
 //fetching the question and answer element
 
 const questionElement =document.getElementById('question')
-const answerButtonsElement = document.getElementById('answer-buttons')
+const answerButtonsElement = document.getElementById('answers-tracker')
 const resultContainer =document.getElementById('result')
 
 //Shuffling the questions
@@ -121,7 +121,8 @@ const questions =[
         answers: [
             {text: 'call function myfunction()', correct:false},
             {text: 'myfunction()', correct:true},
-            {text: 'all of the above', correct:false}
+            {text: 'all of the above', correct:false},
+            {text: 'none of the above', correct:false}
         ]
     },
     {
