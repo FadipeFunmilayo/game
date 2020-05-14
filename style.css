@@ -116,35 +116,3 @@ body {
       margin-left: 17%;
     }
     
-  }
-  .answers-tracker div{
-    height: 40px;
-    width: 40px;
-    background-color: #cccccc;
-   
-    display: inline-block;
-    border-radius: 50%;
-    margin-right: 5px;
-
-}
-.answers-tracker{
-    float: left;
-    width: 100%;
-    padding-left: 18px;
-}
-.answers-tracker div.correct{
-    background-color: green;
-     
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-.answers-tracker div.wrong{
-    background-color:red;
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
-  
